@@ -5,15 +5,20 @@
 			dark
 		>
 			<v-spacer />
-			<v-btn
-				outlined
-				class="ml-3"
-				>Главная</v-btn
+
+			<router-link to="/">
+				<v-btn
+					outlined
+					class="ml-3 linkBtn"
+					>Главная</v-btn
+				></router-link
 			>
-			<v-btn
-				outlined
-				class="ml-3"
-				>Фото</v-btn
+			<router-link to="/photos">
+				<v-btn
+					outlined
+					class="ml-3 linkBtn"
+					>Фото
+				</v-btn></router-link
 			>
 		</v-app-bar>
 	</v-container>
@@ -26,4 +31,8 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+.linkBtn {
+	text-decoration: none;
+}
+</style>
